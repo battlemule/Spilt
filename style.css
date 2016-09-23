@@ -1,0 +1,232 @@
+/*
+
+Theme Name: Spilt Theme
+
+Theme URL: http://robertgwillis.com/spilt
+
+Description: A Paint Spill styled theme
+
+Author: Robert Willis
+
+Author URL: http:robertgwillis.com
+
+Version: 2.0
+
+*/
+
+
+
+
+
+/* ---------------------------------------------------------------------
+
+    Spilt Clothing
+
+    Robert Willis
+
+    24 November 2014
+
+	
+
+    style.css
+	
+
+-------------------------------------------------------------------------*/
+
+
+
+/* Base body colours and font */
+
+body {font: 13px 'Permanent Marker',cursive; background-color: #ffffff;}
+
+body, select, input, textarea {color: #333;}
+
+
+
+/* Custom text-selection colors */
+
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+
+::selection {background: #fcd700; color: #fff; text-shadow: none;} 
+
+
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+
+
+/* Mozilla dosen't style place holders by default */
+
+input:-moz-placeholder { color:#a9a9a9; }
+
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+
+
+/* My Styles
+
+-------------------------------------------------------------------------------*/
+
+
+
+/* Global
+
+---------------------*/
+
+/* Set wrapper max width */
+
+.wrapper {width:1020px; margin:0 auto; background:#fff; position:relative;}
+
+/* Set background image within wrapper width */		  
+
+#background {position: absolute; bottom: 10px; right: 0px; z-index: 0;}
+
+/* Remove search engine H1 from view window */
+
+h1 {position:absolute; text-indent:-9999px;}
+
+
+
+/* Set site-wide font styling */
+
+h1,h2,h3,h4,h5,h6 {font-family:'Permanent Marker',cursive;
+
+                   font-weight:normal; color: #333;}
+
+/* Heading elements appear in uppercase */				   
+
+h1, h2 {text-transform:uppercase;}
+
+/* Paragraph font size */
+
+p {font-size: 15px;}
+
+
+
+/* Header 
+
+----------*/
+
+/* Give fixed height */
+
+header {height:105px;}
+
+/* Position logo within header */
+
+#logo {position:absolute; top:5px; left:20px;}
+
+
+
+/* Navigation
+
+------------*/
+
+/* Position nav bar in header */
+
+header nav {float:right; margin:60px 40px 0 0;}
+
+/* Position nav links in nav bar */
+
+header nav ul li {float:left; margin: 0 0 0 30px;}
+
+/* Set font details for navigation links */
+
+header nav ul li a {text-decoration:none;
+
+                    font-family:'Permanent Marker',cursive;
+
+	            font-size:30px; font-weight:normal;
+
+                    color: #000000;;}
+
+/* Set underline and colour nav hover effects */
+
+header nav ul li a:hover {color: #ff0000;
+
+                          border-bottom: medium solid #ff0000;}
+
+/* Give current page same styling as a hover effect */
+
+.current_page_item a {
+
+color: #ff0000;
+
+border-bottom: medium solid #ff0000;
+
+}
+
+					
+
+/* Main
+
+-------------*/
+
+/* Give content section defined width and height */
+
+#content {width: 939px; height: 450px; margin: 30px auto;}
+
+
+
+/* Footer
+
+-------------*/
+
+/* Give footer width and pad underneath content section */
+
+footer {clear: both; width: 939px; margin: 0 auto;
+
+        padding: 75px 0 0 0;}
+
+/* Float footer content to left and right of footer */
+
+#email {float: right;}
+
+#copyright {float: left;}
+
+
+
+/* Home Page
+
+--------------------*/
+
+/* Position logo on home page */
+
+#contentlogo {position: absolute; top: 145px; left: 25%;}
+
+/* Position tagline on home page */
+
+#tagline {position: absolute; top: 325px; left: 17%;
+
+          font-size: 30px;}
+
+
+
+/* Cart Page
+
+--------------------*/
+
+/* Pad footer on cart page */
+
+body.page-id-6 footer {padding-top:275px;}
+
+
+
+/* Checkout Page
+
+--------------------*/
+
+/* Pad footer on checkout page */
+
+body.page-id-7 footer {padding-top:275px;}
+
+
+
+/* Product Page
+
+--------------------*/
+
+/* Pad footer on product page */
+
+.single-product footer {padding-top:300px;}
